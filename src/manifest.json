@@ -1,0 +1,27 @@
+{
+  "name": "Honey-like",
+  "short_name": "Honey-like",
+  "options_page": "options.html",
+  "version": "0.0.1",
+  "version_name": "0.0.1",
+  "description": "",
+  "background": {
+    "persistent": false,
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "alarms",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "web_accessible_resources": [
+    "popup.html",
+    "drop-coin.mp3"
+  ],
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
